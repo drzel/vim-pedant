@@ -1,16 +1,16 @@
 # Vim-Pedant
 Change iterm2 palette when changing colorschemes
 
-### The problem
+## The problem
 Changing colorscheme won't change the background color of the bordering window. For pedants like me, this isn't acceptable.
 
-### The solution
+## The solution
 This plugin allows you to map a corresponding `.itermcolors` file to vim's colorscheme, and vim will update the current iterm2 profile to match.
 
-### Installation
+## Installation
 Install with a vim plugin manager (or don't).
 
-### Usage
+## Usage
 Pedant looks for its configuration inside a vim dictionary `g:pedant_options`. Each colorscheme should have its name as the key, and an array as its value, with the first item being the `.itermcolors` file, and the second item is passed to `set background=`.
 
 E.g.
@@ -22,7 +22,7 @@ let g:pedant_options = {
       \ }
 ```
 
-### Notes
+## Notes
 This is a nasty hack.
 
 Initially I just changed the iterm2 profile when changing colorschemes. This worked will with one caveat, font size. I often use `⌘ =` and `⌘ -` to zoom, but whenever the profile is changed, iterm will revert to the profile's font size. Honestly, font size shouldn't be part of the profile, and there is an open issue regarding this: https://gitlab.com/gnachman/iterm2/issues/5645
