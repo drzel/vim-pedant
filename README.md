@@ -10,7 +10,7 @@ This plugin allows you to map a corresponding `.itermcolors` file to vim's color
 ## Installation
 Install with a vim plugin manager (or don't).
 
-## Usage
+## Configuration
 Pedant looks for its configuration inside a vim dictionary `g:pedant_options`. Each colorscheme should have its name as the key, and an array as its value, with the first item being the full path the the corresponding `.itermcolors` file, and the second item is passed to `set background=`.
 
 E.g. In your `.vimrc` add:
@@ -20,6 +20,14 @@ let g:pedant_options = {
       \ 'gruvbox': ['/Users/<username>/itermcolors/gruvbox.itermcolors', 'light'],
       \ 'deep-space': ['/Users/<username>/itermcolors/deep-space.itermcolors', 'dark'],
       \ }
+```
+
+## Usage
+Change colorscheme with `Pcolorscheme` instead of `colorscheme`.
+
+E.g
+```
+:Pcolorscheme nova
 ```
 
 ## Notes
