@@ -15,6 +15,8 @@ Pedant looks for its configuration inside a vim dictionary `g:pedant_options`. E
 
 E.g.
 ```vim
+" .vimrc
+
 let g:pedant_options = {
       \ 'nova': ['/Users/<username>/itermcolors/nova.itermcolors', 'dark'],
       \ 'gruvbox': ['/Users/<username>/itermcolors/gruvbox.itermcolors', 'light'],
