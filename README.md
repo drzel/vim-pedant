@@ -13,10 +13,8 @@ Install with a vim plugin manager (or don't).
 ## Usage
 Pedant looks for its configuration inside a vim dictionary `g:pedant_options`. Each colorscheme should have its name as the key, and an array as its value, with the first item being the full path the the corresponding `.itermcolors` file, and the second item is passed to `set background=`.
 
-E.g.
+E.g. In your `.vimrc` add:
 ```vim
-" .vimrc
-
 let g:pedant_options = {
       \ 'nova': ['/Users/<username>/itermcolors/nova.itermcolors', 'dark'],
       \ 'gruvbox': ['/Users/<username>/itermcolors/gruvbox.itermcolors', 'light'],
