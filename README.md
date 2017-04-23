@@ -1,5 +1,6 @@
-# Pedant
-## Change iterm2 palette when changing colorschemes
+# Vim-Pedant
+Change iterm2 palette when changing colorschemes
+
 ### The problem
 Changing colorscheme won't change the background color of the bordering window. For pedants like me, this isn't acceptable.
 
